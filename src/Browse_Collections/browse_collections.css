@@ -1,0 +1,135 @@
+/* header */
+
+header .div-form-container {
+  margin: 2rem 0 2rem 1rem;
+  width: fit-content;
+  color: var(--blue-gray-700);
+}
+
+header .div-form-container h1 {
+  font-size: 2.5rem;
+}
+
+header .div-form-container h2 {
+  font-size: 1.5rem;
+}
+
+header .div-form-container form {
+  margin-top: 1.5rem;
+  background-color: white;
+  border: 1px solid var(--blue-gray-400);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 0.3rem 1.2rem;
+}
+
+header .div-form-container form input {
+  color: var(--blue-gray-700);
+  font-size: 1.1rem;
+}
+
+header .div-form-container form input:focus {
+  outline: none;
+}
+
+header .div-form-container form button {
+  color: var(--blue-gray-700);
+}
+
+header .div-form-container form :is(input, button) {
+  background-color: inherit;
+  border: 1px solid white;
+}
+
+/* main */
+
+main section#btn-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+main section#btn-container button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background-color: white;
+  border: 1px solid var(--blue-gray-500);
+  border-radius: 15px;
+  color: var(--blue-gray-700);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+main section.book-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+main section.book-container > p {
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 1.5rem auto;
+}
+
+main section.book-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section.book-container li {
+  display: inline-block;
+  margin: 1rem;
+}
+
+main section.book-container .book-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main section.book-container img {
+  width: 10rem;
+  height: 15rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+main section.book-container img:hover {
+  box-shadow: 2px 2px 7px var(--blue-gray-400);
+}
+
+main section.book-container .book-details p {
+  font-size: 1.2rem;
+  padding: 0 1rem 1rem;
+  max-width: 11rem;
+  font-weight: 600;
+}
+
+main section.book-container .book-details p small {
+  font-weight: normal;
+}
+
+/*  */
+
+@media (min-width: 576px) {
+  header .div-form-container {
+    max-width: 60vw;
+    margin: 8rem 0 9rem 10%;
+  }
+
+  header .div-form-container h1 {
+    font-size: 4rem;
+  }
+
+  header .div-form-container h2 {
+    font-size: 2rem;
+  }
+
+  main section#btn-container {
+    padding: 1rem;
+  }
+}

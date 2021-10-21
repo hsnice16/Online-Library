@@ -1,0 +1,41 @@
+#sign-in-modal .modal-body {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+}
+
+#sign-in-modal .modal-body button {
+  background-color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--blue-gray-500);
+  box-shadow: 2px 2px 4px var(--blue-gray-400);
+  color: var(--blue-gray-700);
+  width: 17rem;
+}
+
+#sign-in-modal .modal-body button:hover {
+  box-shadow: none;
+}
+
+#sign-in-modal .modal-body .or-p {
+  line-height: 0.1rem;
+  padding: 0.1rem;
+  margin: 1rem auto;
+  max-width: 10rem;
+  border-bottom: 1px dashed var(--blue-gray-500);
+}
+
+#sign-in-modal .modal-body .or-span {
+  color: var(--blue-gray-700);
+  padding: 0 0.3rem;
+  background-color: white;
+}
+
+#sign-in-modal .modal-footer {
+  border: none;
+  text-align: center;
+  color: var(--blue-gray-500);
+  padding: 1rem;
+}

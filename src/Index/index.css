@@ -1,0 +1,103 @@
+/* header */
+
+header h1 {
+  margin: 4rem 0 4rem 1rem;
+  width: fit-content;
+  color: var(--blue-gray-700);
+  font-size: 2.5rem;
+}
+
+/* main */
+
+main section {
+  padding: 0 7% 2rem;
+}
+
+main section h2 {
+  font-size: 2rem;
+}
+
+main section .book-list-container {
+  max-height: 24rem;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+main section .book-list-container img {
+  max-width: 15rem;
+  max-height: 20rem;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 2px 2px 7px var(--blue-gray-400);
+}
+
+main section .book-list-container img:hover {
+  box-shadow: none;
+}
+
+main section .book-list-container ul {
+  list-style: none;
+}
+
+main section .book-list-container li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+}
+
+main section .genre-card-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main section .genre-card-container .genre {
+  background-color: var(--blue-gray-100);
+  margin: 0.5rem;
+  width: 8rem;
+  height: 10rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+main section .genre-card-container .genre img {
+  width: 75px;
+  height: 75px;
+}
+
+main section .genre-card-container .genre p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+main section .genre-card-container .genre small {
+  font-weight: 600;
+}
+
+/*  */
+
+@media (min-width: 576px) {
+  header h1 {
+    max-width: 60vw;
+    font-size: 4rem;
+    margin: 8rem 0 12rem 10%;
+  }
+
+  main section h2 {
+    font-size: 2.5rem;
+  }
+
+  main section .genre-card-container .genre {
+    width: 12rem;
+  }
+}

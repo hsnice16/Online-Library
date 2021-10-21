@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Library | Get eBooks and digital audio books</title>
+
+    <link href="src/App/app.css" rel="stylesheet" />
+    <link href="src/Index/index.css" rel="stylesheet" />
+    <link href="src/Book_Modal/book_modal.css" rel="stylesheet" />
+    <link href="src/Sign_In_Modal/sign_in_modal.css" rel="stylesheet" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="div-container">
+      <header>
+        <nav class="navbar navbar-expand-sm">
+          <div>
+            <a href="index.html" class="navbar-brand">
+              <img
+                src="assets/online_library_brand_icon.png"
+                alt="Hand holding a mobile phone, with book open in mobile phone"
+              />
+              onlineLibrary
+            </a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasSm"
+            aria-controls="navbarOffcanvasSm"
+          >
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="navbarOffcanvasSm"
+            aria-labelledby="navbarOffcanvasSmLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="browse_collections.html#all"
+                    >Browse Collections</a
+                  >
+                </li>
+                <li class="nav-item" id="sign-in-link-container"></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h1>Get eBooks and digital audio books</h1>
+      </header>
+
+      <!-- auth provider -->
+      <script src="src/Auth_User/auth_provider.js"></script>
+
+      <main>
+        <section>
+          <h2>Free eBooks</h2>
+
+          <div class="book-list-container ebook-list">
+            <ul>
+              <li>
+                <img
+                  src="assets/genres/history/book_cover/online_library_sapiens.jpg"
+                  alt="Cover image of Sapiens book by Yuval Noah Harari"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/genres/business/book_cover/online_library_rich_dad_poor_dad.jpg"
+                  alt="Cover image of Rich Dad Poor Dad book by Robert Kiyosaki and Sharon Lechter"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/genres/technology/book_cover/online_library_steve_jobs.jpg"
+                  alt="Cover image of Steve Jobs book by Walter Isaacson"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/genres/technology/book_cover/online_library_the_age_of_surveillance_capitalism.jpg"
+                  alt="Cover image of The Age of Surveillance Capitalism book by Shoshana Zuboff"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/genres/technology/book_cover/online_library_the_soul_of_a_new_machine.jpg"
+                  alt="Cover image of The Soul of a New Machine book by Tracy Kidder"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- <section>
+          <h2>Digital Audio Books</h2>
+
+          <div class="book-list-container">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </section> -->
+
+        <section>
+          <h2>Genres</h2>
+
+          <div class="genre-card-container">
+            <div class="genre" data-hash-value="tech">
+              <img
+                src="assets/online_library_technology_icon.png"
+                alt="VR technology icon"
+              />
+              <div>
+                <p>Technology</p>
+                <small>3</small>
+              </div>
+            </div>
+            <div class="genre" data-hash-value="history">
+              <img
+                src="assets/online_library_history_icon.png"
+                alt="Book icon"
+              />
+              <div>
+                <p>History</p>
+                <small>1</small>
+              </div>
+            </div>
+            <div class="genre" data-hash-value="business">
+              <img
+                src="assets/online_library_business_icon.png"
+                alt="Rupee symbol icon"
+              />
+              <div>
+                <p>Business</p>
+                <small>1</small>
+              </div>
+            </div>
+            <div class="genre" data-hash-value="sci-fi">
+              <img
+                src="assets/online_library_science_fiction_icon.png"
+                alt="Asteroid icon"
+              />
+              <div>
+                <p>Science Fiction</p>
+                <small>0</small>
+              </div>
+            </div>
+            <div class="genre" data-hash-value="literature">
+              <img
+                src="assets/online_library_literature_icon.png"
+                alt="William Shakespeare face icon"
+              />
+              <div>
+                <p>Literature</p>
+                <small>0</small>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-data-container">
+          <div class="link-icon-container">
+            <ul>
+              <p>Creator</p>
+              <li>
+                <a href="https://twitter.com/hsnice16" target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/hsnice16" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/hsnice16/" target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/hsnice16/" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+            <div>
+              <img
+                src="assets/online_library_brand_icon.png"
+                alt="Hand holding a mobile phone, with book open in mobile phone"
+              />
+              <p>onlineLibrary</p>
+            </div>
+          </div>
+
+          <p>
+            © <span class="span-year"></span>,
+            <a href="index.html">onlineLibrary</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="src/Firebase/firebase.js"></script>
+    <script src="src/Book_Modal/book_modal.js"></script>
+    <script src="src/Sign_In_Modal/sign_in_modal.js"></script>
+    <script src="src/App/app.js"></script>
+    <script src="src/Index/index.js"></script>
+  </body>
+</html>

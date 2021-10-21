@@ -1,0 +1,67 @@
+#book-modal.modal-dialog {
+  max-width: 800px !important;
+}
+
+.modal-body h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: auto;
+  color: var(--blue-gray-500);
+}
+
+.modal-body .img-button-container {
+  padding: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-body .img-button-container img {
+  border-radius: 7px;
+  box-shadow: 2px 2px 7px var(--blue-gray-400);
+  max-width: 280px;
+}
+
+.modal-body .img-button-container div {
+  padding: 1rem;
+}
+
+.modal-body .img-button-container button {
+  border: 2px solid var(--green-500);
+  color: white;
+  font-weight: 600;
+  background-color: var(--green-500);
+  margin: 0.5rem;
+  width: 15rem;
+  border-radius: 25px;
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+}
+
+.modal-body .img-button-container button:hover {
+  background-color: var(--green-400);
+}
+
+@media (min-width: 768px) {
+  .modal-body .img-button-container div {
+    height: 400px;
+    width: 45%;
+    border-left: 1px dotted var(--blue-gray-400);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .modal-body .img-button-container button {
+    margin: 0.5rem auto;
+  }
+}
+
+/* over riding */
+
+.offcanvas-end {
+  width: 300px !important;
+}
