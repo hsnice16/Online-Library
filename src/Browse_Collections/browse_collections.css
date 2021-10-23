@@ -26,6 +26,7 @@ header .div-form-container form {
 header .div-form-container form input {
   color: var(--blue-gray-700);
   font-size: 1.1rem;
+  width: 200px;
 }
 
 header .div-form-container form input:focus {
@@ -127,6 +128,10 @@ main section.book-container .book-details p small {
 
   header .div-form-container h2 {
     font-size: 2rem;
+  }
+
+  header .div-form-container form input {
+    width: 250px;
   }
 
   main section#btn-container {

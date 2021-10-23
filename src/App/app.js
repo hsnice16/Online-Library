@@ -48,6 +48,15 @@ function signInErrorHandler(error) {
 }
 
 async function handleGoogleSignInClick() {
+  // workaround of late pop up
+  const scriptElement = document.createElement("script");
+  scriptElement.setAttribute(
+    "src",
+    "https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"
+  );
+  document.querySelector("body").appendChild(scriptElement);
+  //
+
   try {
     const result = await signInWithGoogle();
 

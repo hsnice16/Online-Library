@@ -101,7 +101,7 @@ function showSearchFilteredBooks(searchedValue) {
   } else if (filteredData.length === 0 && searchedValue.length !== 0) {
     bookContainer.innerHTML = `
         <p>
-            Sorry, No book found with searched Title or Author name 
+            Sorry, No book found with searched Title or Author
             in our Database
         </p>
       `;

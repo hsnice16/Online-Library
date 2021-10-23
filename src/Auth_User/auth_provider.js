@@ -5,7 +5,7 @@ function setSignInLinkContainerChild(user) {
 
   if (user) {
     signInLinkContainer.innerHTML =
-      "<a class='nav-link' href='#'>Your List</a>";
+      "<a class='nav-link' href='your_list.html'>Your List</a>";
   } else {
     signInLinkContainer.innerHTML =
       "<a class='nav-link' href='#' id='sign-in-link'>Sign In</a>";
@@ -19,13 +19,14 @@ let onlineLibraryUser;
 function setOnlineLibraryUser(onlineLibraryUserToken) {
   onlineLibraryUser = onlineLibraryUserToken;
 
-  setSignInLinkContainerChild(onlineLibraryUser);
-
   const EXPIRE_DAYS = 2;
   const date = new Date();
   date.setTime(date.getTime() + EXPIRE_DAYS * 24 * 60 * 60 * 1000);
 
   document.cookie = `onlineLibraryUser=${onlineLibraryUserToken}; expires=${date.toUTCString()}; path=/; secure`;
+
+  setSignInLinkContainerChild(onlineLibraryUser);
+  window.location.reload();
 }
 
 function getOnlineLibraryUser() {
