@@ -1,0 +1,133 @@
+/* over riding */
+
+header {
+  background-position: top;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+/*  */
+
+section {
+  color: var(--blue-gray-700);
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.section-form {
+  text-align: center;
+  padding-bottom: 0;
+  border-bottom: 2px solid var(--blue-gray-500);
+}
+
+.section-form h1 {
+  font-size: 2.5rem;
+}
+
+.section-form form {
+  background-color: white;
+  border: 1px solid var(--blue-gray-400);
+  border-radius: 15px;
+  padding: 0.3rem 1.2rem;
+  max-width: 400px;
+  margin: 1.5rem auto;
+}
+
+.section-form form input {
+  color: var(--blue-gray-700);
+  font-size: 1.1rem;
+  width: 200px;
+}
+
+.section-form form input:focus {
+  outline: none;
+}
+
+.section-form form button {
+  color: var(--blue-gray-700);
+}
+
+.section-form form :is(input, button) {
+  background-color: inherit;
+  border: 1px solid white;
+}
+
+.your-book-list-container > p {
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 1.5rem auto;
+}
+
+.your-book-list-container .your-book {
+  border-bottom: 1px dashed var(--blue-gray-500);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.your-book-list-container .your-book.last-book {
+  border-bottom: none;
+}
+
+.your-book-list-container .your-book .book-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.your-book-list-container .your-book img {
+  width: 8rem;
+  height: 12rem;
+  border-radius: 7px;
+}
+
+.your-book-list-container .your-book .book-details p {
+  font-size: 1.2rem;
+  padding: 0 1rem 1rem;
+  max-width: 11rem;
+  font-weight: 600;
+}
+
+.your-book-list-container .your-book .book-details p small {
+  font-weight: normal;
+}
+
+.your-book-list-container .your-book .book-buttons {
+  padding: 1rem 0;
+}
+
+.your-book-list-container .your-book .book-buttons button {
+  border: 2px solid var(--green-500);
+  color: white !important;
+  font-weight: 600;
+  background-color: var(--green-500);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.your-book-list-container .your-book .book-buttons button:hover {
+  background-color: var(--green-400);
+}
+
+/*  */
+
+@media (min-width: 576px) {
+  .section-form h1 {
+    font-size: 3rem;
+  }
+
+  .section-form form input {
+    width: 300px;
+  }
+
+  .your-book-list-container .your-book .book-buttons {
+    padding: 0;
+  }
+}
