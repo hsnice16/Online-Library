@@ -31,7 +31,7 @@ section {
   background-color: white;
   border: 1px solid var(--blue-gray-400);
   border-radius: 15px;
-  padding: 0.3rem 1.2rem;
+  padding: 0.3rem 0.2rem;
   max-width: 400px;
   margin: 1.5rem auto;
 }
@@ -60,6 +60,28 @@ section {
   font-size: 1.5rem;
   max-width: 700px;
   margin: 1.5rem auto;
+}
+
+.your-book-list-container > p a {
+  text-decoration: none;
+  color: var(--blue-500) !important;
+  display: inline-block;
+  position: relative;
+}
+
+.your-book-list-container > p a:after {
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: var(--blue-500);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.your-book-list-container > p a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .your-book-list-container .your-book {
@@ -110,6 +132,7 @@ section {
   border-radius: 25px;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
 .your-book-list-container .your-book .book-buttons button:hover {
@@ -123,11 +146,19 @@ section {
     font-size: 3rem;
   }
 
+  .section-form form {
+    padding: 0.3rem 1.2rem;
+  }
+
   .section-form form input {
     width: 300px;
   }
 
   .your-book-list-container .your-book .book-buttons {
     padding: 0;
+  }
+
+  .your-book-list-container .your-book .book-buttons button {
+    margin: 0;
   }
 }
