@@ -4,8 +4,7 @@ const yourBookListContainer = document.querySelector(
   ".your-book-list-container"
 );
 
-const booksDetails = [];
-// DATA.slice(0, 4);
+const booksDetails = DATA.slice(0, 4);
 
 function showBooksList(booksDetails) {
   let listItems = [...getYourBooksList(booksDetails)];
