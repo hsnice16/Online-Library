@@ -59,9 +59,3 @@
     margin: 0.5rem auto;
   }
 }
-
-/* over riding */
-
-.offcanvas-end {
-  width: 300px !important;
-}

@@ -87,6 +87,10 @@ header nav a img {
   height: fit-content !important;
 }
 
+.offcanvas-end {
+  width: 300px !important;
+}
+
 /* main */
 
 main {
