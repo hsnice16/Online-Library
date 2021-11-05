@@ -10,7 +10,7 @@ const genres = document.querySelectorAll(".genre");
 
 function handleGenresClick(event) {
   let hashValue = event.currentTarget.getAttribute("data-hash-value");
-  location.href = "browse_collections.html" + "#" + hashValue;
+  location.href = "client/browse_collections.html" + "#" + hashValue;
 }
 
 genres.forEach((genre) => {

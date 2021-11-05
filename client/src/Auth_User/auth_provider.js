@@ -3,9 +3,14 @@
 function setSignInLinkContainerChild(user) {
   const signInLinkContainer = document.querySelector("#sign-in-link-container");
 
+  const isNotOnLandingPage = ["browse_collections.html", "your_list.html"].some(
+    (fileName) => window.location.href.includes(fileName)
+  );
+
   if (user) {
-    signInLinkContainer.innerHTML =
-      "<a class='nav-link' href='your_list.html'>Your List</a>";
+    signInLinkContainer.innerHTML = `<a class='nav-link' href='${
+      isNotOnLandingPage ? "" : "client/"
+    }your_list.html'>Your List</a>`;
   } else {
     signInLinkContainer.innerHTML =
       "<a class='nav-link' href='#' id='sign-in-link'>Sign In</a>";
