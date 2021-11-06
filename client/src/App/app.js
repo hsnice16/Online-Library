@@ -26,14 +26,10 @@ function handleBookShowModal(event) {
 }
 
 function successfulSignInFunctionality(result) {
-  setOnlineLibraryUser(result.credential.accessToken);
+  setOnlineLibraryUser(result.user.uid);
 
   if (modalElement) {
     modalElement.remove();
-  }
-
-  if (myModal) {
-    myModal.dispose();
   }
 }
 
