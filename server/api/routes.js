@@ -12,7 +12,7 @@ router.get("/:id", async (req, res) => {
         msg: `user with id ${req.params.id} has nothing in list`,
       });
     } else {
-      return res.status(200).json(userData.book_details);
+      return res.status(200).json({ books_details: userData.books_details });
     }
   } catch (err) {
     return res.status(500).json({
@@ -34,11 +34,11 @@ router.post("/:id", async (req, res) => {
       if (userData === null) {
         usersDataCollection.insertOne({
           userId: req.params.id,
-          book_details: [book_detail],
+          books_details: [book_detail],
         });
       } else {
-        let exist = userData.book_details.some(
-          (madeNote) => madeNote.title === book_detail.title
+        let exist = userData.books_details.some(
+          (savedBookDetails) => savedBookDetails.title === book_detail.title
         );
 
         if (!exist) {
