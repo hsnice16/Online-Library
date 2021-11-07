@@ -6,7 +6,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use((req, res, next) => {
-  res.set("Access-Control-Allow-Origin", "*");
+  res.set({
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": ["GET", "POST"],
+  });
+
   next();
 });
 app.use(express.json());
