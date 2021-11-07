@@ -5,7 +5,7 @@ function updateUserData(userId, book_detail) {
     { userId },
     {
       $push: {
-        book_details: book_detail,
+        books_details: book_detail,
       },
     }
   );

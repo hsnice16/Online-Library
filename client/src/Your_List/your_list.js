@@ -4,7 +4,36 @@ const yourBookListContainer = document.querySelector(
   ".your-book-list-container"
 );
 
-const booksDetails = DATA.slice(0, 4);
+let booksDetails = [];
+
+function getBooksDetails() {
+  if (onlineLibraryUser) {
+    yourBookListContainer.innerHTML = "<p>Getting Data...</p>";
+
+    fetch(`https://onlibrary-server.herokuapp.com/user/${onlineLibraryUser}`)
+      .then((res) => {
+        if (res.status === 200) return res.json();
+        else return { books_details: [] };
+      })
+      .then((data) => {
+        for (let bookDetail of data.books_details.reverse()) {
+          booksDetails.push(
+            ...DATA.filter(
+              (bookDetails) => bookDetails.title === bookDetail.title
+            )
+          );
+        }
+
+        showBooksList(booksDetails);
+      })
+      .catch((err) => {
+        yourBookListContainer.innerHTML =
+          "<p>Some Error Occured. Please try again after some time !!</p>";
+      });
+  }
+}
+
+getBooksDetails();
 
 function showBooksList(booksDetails) {
   let listItems = [...getYourBooksList(booksDetails)];
@@ -24,8 +53,6 @@ function showBooksList(booksDetails) {
     yourBookListContainer.innerHTML = listItems.join("");
   }
 }
-
-showBooksList(booksDetails);
 
 // form
 
