@@ -113,14 +113,15 @@ function handleBookModalMyListBtnClick(targetElement) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ title: getBookName(targetElement) }),
+      body: JSON.stringify({ title: getBookName(targetElement).trim() }),
     })
       .then((res) => res.json())
       .then((data) => {
         bookModalMsg.innerText = data.msg;
       })
       .catch((err) => {
-        bookModalMsg.innerText = "Some Error Occured. Please try late !!";
+        bookModalMsg.innerText =
+          "Some Error Occured. Please try again or later !!";
       });
   }
 }
