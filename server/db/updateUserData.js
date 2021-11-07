@@ -1,11 +1,11 @@
 const { usersDataCollection } = require("./connect");
 
-function updateUserData(userId, note) {
+function updateUserData(userId, book_detail) {
   return usersDataCollection.updateOne(
     { userId },
     {
       $push: {
-        notes: note,
+        book_details: book_detail,
       },
     }
   );

@@ -12,7 +12,7 @@ router.get("/:id", async (req, res) => {
         msg: `user with id ${req.params.id} has nothing in list`,
       });
     } else {
-      return res.status(200).json(userData.notes);
+      return res.status(200).json(userData.book_details);
     }
   } catch (err) {
     return res.status(500).json({
@@ -23,10 +23,9 @@ router.get("/:id", async (req, res) => {
 });
 
 router.post("/:id", async (req, res) => {
-  if (req.body.title && req.body.body) {
-    const note = {
+  if (req.body.title) {
+    const book_detail = {
       title: req.body.title,
-      body: req.body.body,
       date: Date(),
     };
 
@@ -35,16 +34,16 @@ router.post("/:id", async (req, res) => {
       if (userData === null) {
         usersDataCollection.insertOne({
           userId: req.params.id,
-          notes: [note],
+          book_details: [book_detail],
         });
       } else {
-        let exist = userData.notes.some(
-          (madeNote) => madeNote.title === note.title
+        let exist = userData.book_details.some(
+          (madeNote) => madeNote.title === book_detail.title
         );
 
         if (!exist) {
           try {
-            await updateUserData(req.params.id, note);
+            await updateUserData(req.params.id, book_detail);
           } catch (err) {
             return res.status(500).json({
               msg: "updateUserData error",

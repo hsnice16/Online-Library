@@ -45,6 +45,12 @@
   background-color: var(--green-400);
 }
 
+#book-modal #book-modal-msg {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--blue-gray-500);
+}
+
 @media (min-width: 768px) {
   .modal-body .img-button-container div {
     height: 400px;

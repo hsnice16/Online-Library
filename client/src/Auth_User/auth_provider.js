@@ -1,11 +1,11 @@
 // sign in or your list nav link
 
+let isNotOnLandingPage = ["browse_collections.html", "your_list.html"].some(
+  (fileName) => window.location.href.includes(fileName)
+);
+
 function setSignInLinkContainerChild(user) {
   const signInLinkContainer = document.querySelector("#sign-in-link-container");
-
-  const isNotOnLandingPage = ["browse_collections.html", "your_list.html"].some(
-    (fileName) => window.location.href.includes(fileName)
-  );
 
   if (user) {
     signInLinkContainer.innerHTML = `<a class='nav-link' href='${
