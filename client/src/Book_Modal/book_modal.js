@@ -120,12 +120,8 @@ function handleBookModalMyListBtnClick(targetElement) {
         bookModalMsg.innerText = data.msg;
       })
       .catch((err) => {
-<<<<<<< HEAD
         bookModalMsg.innerText =
           "Some Error Occured. Please try again or later !!";
-=======
-        bookModalMsg.innerText = "Some Error Occured. Please try late !!";
->>>>>>> 0c49e0343124c68f37f8dfc73f8d6b0723aa25f1
       });
   }
 }
