@@ -21,6 +21,7 @@ function handleBookShowModal(event) {
       divContainer.firstChild
     );
 
+    attachEventListenersToModal(event.target);
     handleShowHideModal();
   }
 }
@@ -79,7 +80,7 @@ async function handleFacebookSignInClick() {
   Thank you!`);
 }
 
-function handleSignInModal(event) {
+function handleSignInModal() {
   divContainer.insertBefore(createSignInModal(), divContainer.firstChild);
 
   handleShowHideModal();
