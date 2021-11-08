@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/hsnice16/Online-Library.git"
   },
-  "keywords": [], 
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/hsnice16/Online-Library#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^4.1.4"
   },
