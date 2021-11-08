@@ -51,6 +51,8 @@ function showBooksList(booksDetails) {
       `;
   } else {
     yourBookListContainer.innerHTML = listItems.join("");
+
+    attachEventListenersToYourList();
   }
 }
 
