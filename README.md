@@ -13,8 +13,6 @@ Place where you can get eBooks and digital audiobooks for free.
 
 ---
 
-<br>
-
 ## 🧰 Project Built With
 
 **Frontend :**
@@ -40,8 +38,6 @@ Place where you can get eBooks and digital audiobooks for free.
 
 ---
 
-<br>
-
 ## 👨🏽‍💻 Connect With Me
 
 <a href="https://twitter.com/hsnice16"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
@@ -49,13 +45,9 @@ Place where you can get eBooks and digital audiobooks for free.
 
 ---
 
-<br>
-
 ![online library demo gif](client/assets/onlibrary_demo.gif)
 
 ---
-
-<br>
 
 ## To Get Better Knowledge
 
