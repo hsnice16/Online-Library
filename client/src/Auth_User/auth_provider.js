@@ -35,7 +35,13 @@ function setOnlineLibraryUser(onlineLibraryUserToken) {
 }
 
 function getOnlineLibraryUser() {
-  onlineLibraryUser = document.cookie.split("=")[1] ?? null;
+  onlineLibraryUser = null;
+
+  document.cookie.split(";").forEach((cookie) => {
+    [cookieName, cookieValue] = cookie.split("=");
+    if (cookieName.trim() === "onlineLibraryUser")
+      onlineLibraryUser = cookieValue.trim();
+  });
 
   setSignInLinkContainerChild(onlineLibraryUser);
 }
