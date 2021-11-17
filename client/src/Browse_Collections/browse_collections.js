@@ -3,8 +3,9 @@ const validHashValues = [
   "tech",
   "history",
   "business",
-  "sci-fi",
-  "literature",
+  "psych",
+  "web-dev",
+  "misc"
 ];
 
 let locationHash = location.hash.replace("#", "");

@@ -60,6 +60,7 @@ main section#btn-container button {
   color: var(--blue-gray-700);
   font-size: 1.1rem;
   font-weight: 600;
+  outline: none;
 }
 
 main section.book-container {
