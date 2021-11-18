@@ -111,3 +111,14 @@ if (onlineLibraryUser === null) {
 
 const spanYear = document.querySelector(".span-year");
 spanYear.innerText = new Date().getFullYear();
+
+const scrollToTopLink = document.querySelector("#scroll-to-top-link");
+
+function handleScrollToTopLinkClick(event) {
+  event.preventDefault();
+
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+scrollToTopLink.addEventListener("click", handleScrollToTopLinkClick);
