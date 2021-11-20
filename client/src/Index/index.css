@@ -1,10 +1,16 @@
 /* header */
 
 header h1 {
-  margin: 4rem 0 4rem 1rem;
-  width: fit-content;
+  /* margin: 4rem 0 4rem 1rem;
+  width: fit-content; */
   color: var(--blue-gray-700);
   font-size: 2.5rem;
+}
+
+header .header-text-container {
+  /* added badge */
+  margin: 4rem 0 1rem 1rem;
+  width: fit-content;
 }
 
 /* main */
@@ -88,9 +94,18 @@ main section .genre-card-container .genre small {
 
 @media (min-width: 576px) {
   header h1 {
-    max-width: 60vw;
+    /* max-width: 60vw; */
     font-size: 4rem;
-    margin: 8rem 0 12rem 10%;
+    /* margin: 8rem 0 12rem 10%; */
+
+    /* added badge */
+    margin: 0 0 0.5rem -0.2rem;
+  }
+
+  header .header-text-container {
+    /* added badge */
+    max-width: 60vw;
+    margin: 8rem 0 8rem 10%;
   }
 
   main section h2 {

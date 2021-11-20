@@ -8,6 +8,7 @@ Place where you can get eBooks and digital audiobooks for free.
 
 ![Forks](https://img.shields.io/github/forks/hsnice16/Online-Library)
 ![Stars](https://img.shields.io/github/stars/hsnice16/Online-Library)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c2ecc45-42ec-48a6-a8ae-5758def538ca/deploy-status)](https://app.netlify.com/sites/onlibrary/deploys)
 
 </div>
 
@@ -49,6 +50,6 @@ Place where you can get eBooks and digital audiobooks for free.
 
 ---
 
-## To Get Better Knowledge
+## 🤔 To Get Better Knowledge
 
 [Watch this video](https://youtu.be/JUPHUA1siVk)
