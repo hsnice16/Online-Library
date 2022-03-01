@@ -16,6 +16,7 @@ body {
 }
 
 .div-container {
+  margin: auto;
   max-width: 1600px;
 }
 
